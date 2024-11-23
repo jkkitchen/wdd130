@@ -121,7 +121,7 @@ footer {
     font-family: var(--text-font), Helvetica, sans-serif;
 }
 
-.social {
+.social a{
     text-decoration: none;
 
 }
