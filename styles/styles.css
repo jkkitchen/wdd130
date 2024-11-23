@@ -26,6 +26,7 @@ h1 {
 }
 main img {
     width: 150px;
+    max-width: 840px;
     height: auto;
     padding: var(--heading-padding);
     box-shadow: 0 0 30px gray;
@@ -67,7 +68,7 @@ footer {
 .box {
     margin: 1rem;
     border: var(--heading-border);
-    padding 1rem;
+    padding: 1rem;
     background-color: #ddd;
     color: var(--heading-background-color);
 }
