@@ -21,9 +21,9 @@ nav {
     background-color: var(--heading-background-color);
     padding: 10px;   
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    font-family: Hanuman, Helvetica, sans-serif;
+    font-family: "Hanuman", Helvetica, sans-serif;
 }
 nav a {
     color: var(--heading-text-color);
@@ -32,7 +32,7 @@ nav a {
     text-decoration: none;
 }
 h1 {
-    color: var(--heading-background-color);    
+    color: var(--heading-background-color);        
 }
 
 .grid {
@@ -57,7 +57,7 @@ p {
     padding: 0;    
 }
 aside {    
-    clear: both;
+    /* clear: both; */
     width: 20rem;
     margin: 1rem;
     border: var(--heading-border);
