@@ -253,10 +253,6 @@ button, textarea {
     font-family: var(--text-font), Helvetica, sans-serif; 
 }
 
-textarea {
-
-}
-
 input, label, textarea {
     padding: 0.25rem;
     font-size: 1.1rem;
