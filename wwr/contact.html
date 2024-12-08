@@ -1,0 +1,132 @@
+<!--About Us Page for White Water Rafting Website-->
+
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>White Water | Contact Us</title>
+        <meta name="description" content="The contact us page of the White Water rafting website.">
+        <meta name="author" content="Jessica Kitchen">
+        <!--Link to CSS Page-->        
+        <link rel="stylesheet" href="styles/rafting.css"> 
+        <!--Red Hat Display and Hanuman Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hanuman&family=Red+Hat+Display&display=swap" rel="stylesheet">
+      
+    </head>
+    <body>
+        <header class="logo-box">
+            <img src="images/logo.jpg" alt="logo">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="trips.html">Trips</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </header>
+        <main>
+            <section class="employee-profile">
+                <h2>Meet Our Team</h2>                
+                <div>
+                <figure class="employee-pic-1">
+                    <img src="images/ceo.webp" alt="CEO">
+                    <figcaption>CEO</figcaption>
+                </figure>
+                <figure class="employee-pic-2">
+                    <img src="images/trip-coordinator.webp" alt="Trip Coordinator">
+                    <figcaption>Trip Coordinator</figcaption>
+                </figure>
+                <figure class="employee-pic-3">
+                    <img src="images/rafting-guide-supervisor.webp" alt="Rafting Guide Supervisor">
+                    <figcaption>Rafting Guide Supervisor</figcaption>
+                </figure>               
+                </div>             
+            </section>
+            <section class="company-info">
+                <h2>Company Information</h2>
+                <div class="info">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Phone Number:</th>
+                                <td>864-560-2668</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">E-mail:</th>
+                                <td>whitewater@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Address:</th>
+                                <td>345 Rainy Terrace<br>
+                                    Greenville, SC 29640</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3274.6476977762495!2d-82.4841719237969!3d34.839949375727855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8858372e0ff8faed%3A0x471afce5dcccb573!2sSaluda%20Outdoor%20Center!5e0!3m2!1sen!2sus!4v1733515888440!5m2!1sen!2sus" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </section>
+            <section class="rafting-form">
+                <h2>Contact Form</h2>
+                <form>
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <div class="form-item column1">
+                            <label for="user-name">Full Name:</label>
+                            <input type="text" id="user-name" name="user-name">
+                        </div>
+                        <div class="form-item column1">
+                            <label for="user-email">E-mail:</label>
+                            <input type="text" id="user-email" name="user-email">
+                        </div>
+                    </fieldset> 
+                    <fieldset>
+                        <legend>Rafting Inquiry</legend>
+                        <div class="form-item column2">
+                            <input type="radio" id="purpose" name="purpose">
+                            <label for="purpose">General Inquiry</label>  
+                        </div>
+                        <div class="form-item column2">
+                            <input type="radio" id="reservation" name="reservation">  
+                            <label for="reservation">Reservation Question</label>
+                        </div>
+                        <div class="form-item column2">     
+                            <input type="radio" id="suggestion" name="suggestion">
+                            <label for="suggestion">Website Suggestion</label>
+                        </div>
+                        <div class="form-item column2">
+                            <label for="message">Message:</label>
+                        </div>
+                        <textarea id="message" name="message" rows="5" placeholder="Please type your message here."></textarea>                                                
+                    </fieldset>                    
+                    <div class="form-item column3">
+                        <label for="subscription">Please subscribe me to the monthly newsletter.</label>
+                        <input type="checkbox" id="subscription" name="subscription">
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>&copy;2024 | White Water Rafting | Jessica Kitchen</p>
+
+            <nav class="social">
+                <a href="facebook.com">
+                    <img src="images/facebook.svg" alt="Facebook">
+                </a>
+                <a href="x.com">
+                    <img src="images/x.svg" alt="X">
+                </a>
+                <a href="instagram.com">
+                    <img src="images/instagram.svg" alt="Instagram">
+                </a>
+            </nav>
+            <nav class="wireframe">
+                <a href="https://app.moqups.com/2prGHtc5S4fS0CgK18Acs4Y4IwUDtW6F/view/page/aad69f1f6">Wireframe Link</a>
+            </nav>
+        </footer>
+    </body>
+</html>
