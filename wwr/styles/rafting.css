@@ -33,13 +33,15 @@ body {
     justify-content: space-between;
     align-content: center;
     flex-wrap: wrap;
+
 }
 
 .logo-box a {
     background: var(--accent1-color);
     border: 5px var(--accent2-color);
     text-decoration: none;
-    padding: 10px;       
+    padding: 10px;   
+    color: var(--accent2-color);    
 }
 
 .logo-box img {
@@ -59,7 +61,7 @@ body {
     object-fit: cover;
 }
 
-h1 {
+.hero h1 {
     text-align: center;
     font-family: var(--heading-font), Helvetica, sans-serif;
     color: var(--prmiary-color);
@@ -75,8 +77,9 @@ h1 {
 article {
     background: var(--accent3-color);
     opacity: 80%;
-    color: var(--primary-color);
+    color: black;
     font-family: var(--text-font), Helvetica, sans-serif;
+    font-weight: bold;
     text-align: center;
     position: absolute;
     top: 150px;
@@ -116,6 +119,8 @@ h2 {
   width: 200px;
   height: auto;
   margin-right: 5px; 
+  background-color: var(--accent1-color);
+  padding: 0.15rem;
 }
 
 .adventure {
@@ -185,6 +190,16 @@ td {
     vertical-align: top;
 }
 
+.h1-formatting-contact h1 {
+    text-align: center;
+    background: var(--accent1-color);
+    padding: 0;
+    margin: 0;
+    color: var(--primary-color);
+    font-family: var(--heading-font), Helvetica, sans-serif;
+    font-size: 4rem;
+}
+
 .employee-profile {
     background: var(--accent2-color);
     padding: 2rem 0;
@@ -193,20 +208,50 @@ td {
     text-align: center;
 }
 
-.employee-profile div {
+.h1-formatting-trips h1 {
+    text-align: center;
+    background: var(--accent2-color);
+    padding: 0;
+    margin: 0;
+    color: var(--accent1-color);
+    font-family: var(--heading-font), Helvetica, sans-serif;
+    font-size: 4rem;
+}
+
+
+.top-adventures {
+    background: var(--accent3-color);
+    padding: 2rem 0;
+    color: var(--primary-color);
+    font-family: var(--text-font), Helvetica, sans-serif;
+    text-align: center;
+}
+
+.employee-profile div, .top-adventures div {
     display: flex;
     flex-flow: row;
     justify-content: center;
 }
 
-.employee-profile img {
+.employee-profile img, .top-adventures img {
     max-height: 150px;
-    /* max-width: 100px; */
     object-fit: cover;
     margin: 3px;
     border: 2px var(--accent1-color);
     background-color: var(--accent1-color);
     padding: 3px; 
+}
+
+.employee-profile figcaption {
+    background: var(--accent2-color);
+}
+
+.info th {
+    background: var(--primary-color);
+}
+
+.top-adventures h2 {
+    color: var(--primary-color)
 }
 
 .rafting-form {
@@ -216,7 +261,7 @@ td {
     font-family: var(--text-font), Helvetica, sans-serif;
 }
 
-.rafting-form h2 {
+.rafting-form h2, .trips h2, .newsletter-signup h2 {
     color: var(--primary-color)
 }
 
@@ -302,6 +347,114 @@ button:hover {
     margin: 0.5rem 0;
 }
 
+.trips-and-contact, .trips-and-newsletter {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.contact-us-option {
+    grid-column: 1/2;
+    background: var(--accent2-color);
+    padding: 2rem 0;
+    color: var(--accent1-color);
+    font-family: var(--text-font), Helvetica, sans-serif;
+}
+
+.contact-us-option p, .contact-us-option nav {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.contact-us-option a {
+    color: var(--accent1-color);
+}
+
+.contact-us-option img {
+    max-width: 150px;
+    margin: 2rem;
+    padding: 0.1rem;
+    border: 2px var(--accent1-color);
+    background-color: var(--accent1-color);
+}
+
+.trips {
+    grid-column: 2/3;
+    background: var(--accent1-color);
+    padding: 2rem 0;
+    color: var(--primary-color);
+    font-family: var(--text-font), Helvetica, sans-serif;
+}
+
+.trips th {
+    background: var(--accent1-color);
+}
+
+.trips-option {
+    grid-column: 1/2;
+    background: var(--primary-color);
+    padding: 2rem 0;
+    color: var(--accent1-color);
+    font-family: var(--text-font), Helvetica, sans-serif;
+    text-align: center;
+}
+
+.trips-option h2 {
+    color: var(--accent1-color);
+}
+
+.trips-option a {
+    color: var(--accent3-color);
+}
+
+.trips-option img {
+    max-width: 150px;
+    margin: 2rem;
+    padding: 0.1rem;
+    border: 2px var(--accent1-color);
+    background-color: var(--accent1-color);
+}
+
+.trips-option p, .trips-option nav {
+    padding: 1rem;
+}
+
+.newsletter-signup {
+    background: var(--accent1-color);
+    padding: 2rem 0;
+}
+
+.purpose {
+    background: var(--accent2-color);
+    color: var(--accent1-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.purpose h2 {
+    grid-column: 1/3;
+}
+
+.gridbox-col1, .gridbox-col2 {
+    justify-content: space-evenly;
+}
+
+.purpose img {
+    max-height: 300px;
+    margin: 3px;
+    border: 2px var(--accent1-color);
+    background-color: var(--accent1-color);
+    padding: 3px;  
+}
+
+.purpose p {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-family: var(--text-font), Helvetica, sans-serif;;
+}
+
 footer {
     background: var(--primary-color);
     color: var(--accent1-color);
@@ -329,6 +482,6 @@ footer nav {
     height: auto;
 }
 
-.wireframe {
+.wireframe a {
     color: var(--accent1-color)
 }
